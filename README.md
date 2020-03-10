@@ -2,7 +2,19 @@
 
 ## numberOfIslands:
 
-## logic:
+### Problem Statement:
+```
+Given a 2D grid map of ‘1’s (land) and ‘0’s (water), count the number of islands. An
+island is surrounded by water and is formed by connecting adjacent lands horizontally
+or vertically. You may assume all four edges of the grid are all surrounded by water.
+Input:
+11000
+11000
+00100
+00011
+Output: 3
+```
+### logic:
 
 I take in an adjacency matrix (2D array) of 1's and 0's.
 
@@ -11,21 +23,21 @@ I take in an adjacency matrix (2D array) of 1's and 0's.
 I need to find the number of islands in the matrix (tiles of 1's that are all adjacent together (I.E, NOT diagonal))
 
 EX: 
-
+```
 11
 
 11
-
+```
 This would count as one island.
 
 But...
-
+```
 11000
 
 11000
 
 00100
-
+```
 This would could as two islands, because the 1 in the bottom row is not adjacent to the set of four 1's, therefore it is its own island.
 
 To solve this, I traverse left to right, starting from the top row to the bottom row.
