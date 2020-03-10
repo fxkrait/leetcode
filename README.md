@@ -36,7 +36,9 @@ Now that I found an island, I know that it can extend to everything adjacent to 
 
 Therefore, I recurse on the node above, below, left, and right.  
 
-In those cases, I return out if I end up out of bounds of my array. If I find a 1, I will set it to 0, and recurse again. If I find a 0, I do nothing (don't traverse anymore on that node).
+In those cases, I return out if I end up out of bounds of my array. If I find a 1, I will set it to 0, and recurse again. (Note: I do not increment the numberOfIslands counter, because I did not find a new island, I am still processing the same island). 
+
+If I find a 0, I do nothing (don't traverse anymore on that node).
 
 This is similar to a BFS algorithm (iterating out 1 node at a time), and by using this recursive logic, I can set the entire island to 0's.
 
