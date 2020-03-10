@@ -27,11 +27,19 @@ public class numberOfIslands {
         int[][] map = new int[height][width];
 
         initializeMap(map, inputFile);
+        System.out.println("----------------");
+        System.out.println("Initialized Map:");
+        System.out.println("----------------");
         printMap(map);
+        System.out.println("----------------");
 
         int numIslands = findIslands(map);
         System.out.println("the number of islands is " + numIslands);
+        System.out.println("----------------");
+        System.out.println("Processed Map:");
+        System.out.println("----------------");
         printMap(map);
+        System.out.println("----------------");
     }
 
     private static int findIslands(int[][] map) {
