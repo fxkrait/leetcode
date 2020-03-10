@@ -42,7 +42,7 @@ If I find a 0, I do nothing (don't traverse anymore on that node).
 
 This is similar to a BFS algorithm (iterating out 1 node at a time), and by using this recursive logic, I can set the entire island to 0's.
 
-Now, I'm still inside by nested for loops. I keep traversing the array (now with that island turned to all 0's), and find any other islands, and repeat (incrementing by numberOfIslands counter, and setting all of its nodes to 0).
+Now, I'm still inside my nested for loops. I keep traversing the array (Note: that my 2D array is modified as the island I just processed turned to all 0's), and find any other islands, and repeat (incrementing by numberOfIslands counter, and setting all of its nodes to 0).
 
 ### output:
 
